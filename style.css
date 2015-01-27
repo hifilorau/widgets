@@ -1,0 +1,169 @@
+* {
+  margin:0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.menu-wrapper {
+  width: 22em;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header {
+  background: #512742;
+  min-height: 70px;
+}
+
+
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 1.4em 2em;
+  color: gray;
+
+}
+
+.admin-button {
+  margin-top: 5em;
+  border: 1px black solid;
+  background-color: #d3d3d3;
+  text-align: center;
+  font-size: 1.1em;
+  width: 100%;
+  padding: .5em;
+  color: #575757;
+  font-weight: 700;
+  position: relative;
+
+}
+
+
+.flyout {
+  margin-top: .4em;
+  border: 1px black solid;
+  background-color: lightgray;
+  visibility: hidden;
+
+
+  /*visibility: hidden;*/
+
+}
+
+.menu-show .flyout {
+  visibility: visible;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: .5em 0;
+  border-bottom: 1px black solid;
+  text-align: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+.icon-skull {
+  position: absolute;
+  right: 15%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+
+}
+
+.my-list-li {
+  cursor: pointer;
+
+
+}
+
+
+.list-wrapper {
+  border: 1px black solid;
+  width:35%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  padding: 1.4em;
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-button {
+  padding: 1em 5em;
+  border-radius: .5em;
+  background-color: #512742;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: gray;
+}
+
+.modal-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  visibility: hidden
+}
+
+.modal {
+  position: relative;
+  width: 200px;
+  margin: 20% auto;
+  padding: 3em 5em 4em;
+  border-radius: 10px;
+  background: #fff;
+  background-color: gray;
+}
+
+.inner-modal-button {
+  display: block;
+  padding: 1em 3em;
+  background-color: gray
+  color: #512742;
+}
+
+.the-x-button {
+  position: absolute;
+  top:-20px;
+  right: -6px;
+  border: none;
+  font-size: 2em;
+  border-radius: 100%;
+  background: transparent;
+  color: white;
+}
+
+input {
+  padding: 1em;
+  margin: 1em 0;
+}
