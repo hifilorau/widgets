@@ -1,0 +1,19 @@
+body {
+  background: #9e0808;
+}
+
+
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-value {
+  font-size: 5em;
+  font-family: 'PT Mono';
+  color: #e3c6c6;
+
+}

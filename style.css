@@ -57,8 +57,8 @@ a {
 
 
 .flyout {
-  margin-top: 1em;
-  border: 1px black solid;
+  margin-top: 1.4em;
+  /*border: 1px black solid;*/
   background-color: lightgray;
   visibility: hidden;
   opacity: 0;
@@ -66,15 +66,17 @@ a {
 }
 
 .flyout:after {
+  content: '';
   position: absolute;
-  top: -20px;
-  left: 20px;
+  top: -15px;
+  right: 49px;
   z-index: 1000;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 20px 25px 20px;
+  border-width: 0 10px 20px 10px;
   border-color: transparent transparent lightgray transparent;
+
 }
 
 .menu-show .flyout {
@@ -88,7 +90,7 @@ a {
 
 
 ul {
-  padding: 0;
+  padding-top: .2em;
   margin: 0;
   position: relative;
 }
