@@ -8,7 +8,9 @@ var adminButton = document.querySelector('.admin-button');
 /// the actual flyout
 var flyoutMenu = document.querySelector('.flyout');
 
-var theBody = document.querySelector('body');
+//used to remove the flyout with a body click
+var bodyClick = document.querySelector('body');
+
 
 
 
@@ -25,11 +27,14 @@ function toggleClass(element, className) {
   }
 }
 
-adminButton.addEventListener('click',  function(){
+adminButton.addEventListener('click',  function(e){
+  e.stopPropagation();
   toggleClass(menuDiv, 'menu-show');
 });
 
-theBody.addEventListener('click',  function() {
-  console.log(the);
-  flyoutMenu.className = flyoutMenu.className.replace(className, '');
+bodyClick.addEventListener('click',  function() {
+  var closeFlyout = document.querySelector('.menu-show');
+  if (closeFlyout) {
+    toggleClass(adminButton.parentNode, 'menu-show');
+  }
 });
